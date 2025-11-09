@@ -1,1 +1,115 @@
-<h1>Contact: osecalabs@gmail.com</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OsecaLabs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-black text-slate-100">
+    <header class="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-slate-900/70 bg-slate-900/50 border-b border-white/10">
+      <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="h-8 w-8 rounded-xl bg-gradient-to-br from-cyan-400 to-blue-600"></div>
+          <span class="font-semibold tracking-tight text-lg">OsecaLabs</span>
+        </div>
+        <nav class="hidden md:flex items-center gap-6 text-sm text-slate-300">
+          <a href="#about" class="hover:text-white">About</a>
+          <a href="#focus" class="hover:text-white">What We Do</a>
+          <a href="#contact" class="hover:text-white">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="relative overflow-hidden">
+      <div class="absolute inset-0 -z-10">
+        <div class="absolute -top-32 left-1/2 -translate-x-1/2 h-96 w-[60rem] rounded-full blur-3xl opacity-40 bg-gradient-to-r from-indigo-500 via-sky-500 to-cyan-400"></div>
+      </div>
+      <div class="max-w-6xl mx-auto px-6 py-24 md:py-32 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold tracking-tight">
+          Building practical tools for <span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">games</span> & creative tech.
+        </h1>
+        <p class="mt-6 max-w-2xl mx-auto text-slate-300">
+          OsecaLabs crafts Unity tooling, GPU & shader workflows, and automation that turn ideas into shippable products.
+        </p>
+        <div class="mt-8 flex justify-center gap-4">
+          <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl">Contact Us</a>
+          <a href="#focus" class="text-slate-300 hover:text-white">Learn more</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="border-t border-white/10">
+      <div class="max-w-6xl mx-auto px-6 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-start">
+        <div>
+          <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">About OsecaLabs</h2>
+          <p class="mt-4 text-slate-300">
+            We are a small, engineering‑first studio based in Türkiye, building focused tools and systems for game teams and technical creators.
+          </p>
+          <div class="mt-6">
+            <a href="#contact" class="bg-slate-700 hover:bg-slate-600 text-white px-5 py-2 rounded-xl">Work with us</a>
+          </div>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="bg-white/5 p-5 rounded-xl border border-white/10">
+            <h3 class="font-medium">Unity Tools & Plugins</h3>
+            <p class="mt-2 text-sm text-slate-300">Editor extensions, custom inspectors, and pipelines that speed up production.</p>
+          </div>
+          <div class="bg-white/5 p-5 rounded-xl border border-white/10">
+            <h3 class="font-medium">GPU & Shaders</h3>
+            <p class="mt-2 text-sm text-slate-300">URP/HDRP shaders, compute, and practical graphics optimization.</p>
+          </div>
+          <div class="bg-white/5 p-5 rounded-xl border border-white/10">
+            <h3 class="font-medium">Build & Automation</h3>
+            <p class="mt-2 text-sm text-slate-300">CI/CD with Jenkins, versioning, tagging, and one‑click workflows.</p>
+          </div>
+          <div class="bg-white/5 p-5 rounded-xl border border-white/10">
+            <h3 class="font-medium">AI Assistants</h3>
+            <p class="mt-2 text-sm text-slate-300">Practical AI integrations that enhance tools and player experience.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="focus" class="border-t border-white/10">
+      <div class="max-w-6xl mx-auto px-6 py-16 md:py-24 text-center">
+        <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">What We Do</h2>
+        <p class="mt-3 text-slate-300 max-w-3xl mx-auto">
+          Our work sits at the intersection of editor tooling, graphics, and automation.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="border-t border-white/10">
+      <div class="max-w-3xl mx-auto px-6 py-16 md:py-24">
+        <h2 class="text-2xl md:text-3xl font-semibold tracking-tight text-center">Contact Us</h2>
+        <p class="mt-3 text-slate-300 text-center">Tell us a bit about your project and goals.</p>
+        <form onsubmit="handleSubmit(event)" class="mt-8 grid gap-4 max-w-xl mx-auto">
+          <input id="name" type="text" placeholder="Your name" class="px-4 py-3 rounded-lg bg-white/10 border border-white/10" required />
+          <input id="email" type="email" placeholder="you@example.com" class="px-4 py-3 rounded-lg bg-white/10 border border-white/10" required />
+          <textarea id="message" placeholder="What would you like to build together?" class="px-4 py-3 rounded-lg bg-white/10 border border-white/10 min-h-[140px]" required></textarea>
+          <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="border-t border-white/10">
+      <div class="max-w-6xl mx-auto px-6 py-10 text-sm text-slate-400 text-center">
+        <p>© <span id="year"></span> OsecaLabs — All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+      function handleSubmit(e) {
+        e.preventDefault();
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+        const subject = encodeURIComponent(`OsecaLabs Contact – ${name}`);
+        const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+        window.location.href = `mailto:contact@osecalabs.com?subject=${subject}&body=${body}`;
+      }
+    </script>
+  </body>
+</html>
